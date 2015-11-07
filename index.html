@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8">
+		<title>IX Technology Services</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/main.css">
+
+
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<table id="info">
+				<thead id="headings">
+					<tr>
+						<th class="smallish" id="location" >Location</th>
+						<th class="largest" id="object">Object</th>
+						<th class="largest" id="point" >Point</th>
+						<th class="large" id="system">System</th>
+						<th class="medium" id="room" >Room ID</th>
+						<th class="small" id="floor">Floor</th>
+						<th class="medium" id="deadband" >Dead Band</th>
+						<th class="medium" id="time_alarm">Alarm Time</th>
+						<th class="medium" id="zone" >Time Zone</th>
+						<th class="medium">#</th>
+					</tr>
+				</thead>
+				<tbody id="feedback">
+					<tr class="mountable-model">
+						<td><input type="text" name="location[]" class="form-control smallish light"></td>
+						<td><input type="text" name="object_name[]" class="form-control largest dark"></td>
+						<td><input type="text" name="point_name[]" class="form-control largest light"></td>
+						<td><input type="text" name="system_name[]" class="form-control large dark"></td>
+						<td><input type="text" name="room_id[]" class="form-control medium light"></td>
+						<td><input type="text" name="floor[]" class="form-control small dark"></td>
+						<td><input type="text" name="deadband[]" class="form-control medium light"></td>
+						<td><input type="text" name="alarm_time[]" class="form-control medium dark"></td>
+						<td><input type="text" name="time_zone[]" class="form-control medium light"></td>
+						<td><button class="mountable-remove-line-2 dark medium">Delete</button></td>
+					</tr>
+					
+				</tbody>
+				
+			</table>
+				
+				<button id="button2">New Line</button>
+
+			
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="att_tx01_alarm_points.json"></script>
+		<script src="js/mountable.js"></script>
+
+	</body>
+
+</html>
