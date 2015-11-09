@@ -1,0 +1,60 @@
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:100);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto+Condensed);
+
+
+body {
+	font: 12px "Roboto Condensed", "Helvetica Neue", HelveticaNeue, Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background-color: #fff;
+  background:#78ADC0;
+
+}
+
+.container {
+	width: 90%;
+	margin: 2em 5%;
+}
+
+h1 {
+	font-family: 'Open Sans Condensed', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+	font-size: 3em;
+	line-height: 1em;
+}
+
+a {
+	cursor: pointer;
+	color: #3174c7;
+	text-decoration: none;
+}
+
+p > a:hover {
+	text-decoration: underline;
+}
+
+/*thead > tr {
+    top:0;
+    position: fixed;
+    /*height: 5em;*/
+  
+
+    width: 100%;
+    /*padding:20px;*/
+    /*overflow: visible;*/
+    z-index: 1
+}*/
+
+.clear {
+	clear: both;
+	height: 0;
+}
+
+.hide {
+	
+}
+
+
