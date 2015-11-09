@@ -1167,3 +1167,45 @@ return DataTable.select;
 }));
 
 
+$(document).ready(function() {
+	var table = $('#example').DataTable( {
+		ajax: 'data/objects.txt',
+		// deferRender: true,
+		columns: [
+            { data: 'location_name' },
+            { data: 'point_name' },
+			{ data: 'alarm_time' },
+			{ data: 'object_name' },
+            { data: 'system_name' },
+            { data: 'room_id' },
+            { data: 'floor' },
+            { data: 'alarm_high' },
+            { data: 'alarm_low' },
+            { data: 'alert_high' },
+            { data: 'alert_low' },
+            { data: 'note_high' },
+            { data: 'note_low' },
+            { data: 'deadband' },
+            { data: 'location' },
+            { data: 'time_zone' },
+            { data: 'bus_hrs' },
+            { data: 'non_bus_hrs' },
+            { data: 'weekends_holidays' },
+            { data: 'escalate' },
+            { data: 'remarks' }
+		],
+		responsive: {
+            details: {
+                type: 'column',
+                target: -1
+            }
+        },
+        columnDefs: [ {
+            className: 'control',
+            orderable: false,
+            targets:   -1
+        } ]
+	} );
+}
+);
+
